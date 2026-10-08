@@ -1,0 +1,52 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 512 512"
+  role="img"
+  aria-labelledby="logo-title logo-description"
+>
+  <title id="logo-title">Monogramme CN</title>
+  <desc id="logo-description">Un monogramme CN géométrique, entrelacé et légèrement en relief, en orange et ivoire sur fond sombre.</desc>
+  <defs>
+    <linearGradient id="background" x1="65" y1="28" x2="447" y2="488" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38251d" />
+      <stop offset="0.55" stop-color="#211713" />
+      <stop offset="1" stop-color="#17110f" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 240 -240 0 370 145)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e88b47" stop-opacity="0.16" />
+      <stop offset="1" stop-color="#e88b47" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="c-face" x1="137" y1="120" x2="314" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffc17e" />
+      <stop offset="0.55" stop-color="#ef914c" />
+      <stop offset="1" stop-color="#d96e36" />
+    </linearGradient>
+    <linearGradient id="n-face" x1="263" y1="160" x2="385" y2="350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff3e4" />
+      <stop offset="0.52" stop-color="#f3cfaa" />
+      <stop offset="1" stop-color="#d99563" />
+    </linearGradient>
+    <filter id="letter-shadow" x="70" y="72" width="390" height="380" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#100a08" flood-opacity="0.3" />
+    </filter>
+    <path
+      id="letter-c"
+      d="M 335 146 C 309 120 276 108 239 108 C 166 108 119 170 119 256 C 119 342 166 404 239 404 C 276 404 309 392 335 366"
+    />
+    <path id="letter-n" d="M 262 168 V 344 L 391 168 V 344" />
+  </defs>
+
+  <rect x="10" y="10" width="492" height="492" rx="112" fill="url(#background)" />
+  <rect x="10.75" y="10.75" width="490.5" height="490.5" rx="111.25" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1.5" />
+  <circle cx="370" cy="145" r="240" fill="url(#glow)" />
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <use href="#letter-c" transform="translate(0 7)" stroke="#9d4f2d" stroke-width="46" />
+    <use href="#letter-n" transform="translate(0 7)" stroke="#84432b" stroke-width="40" />
+  </g>
+
+  <g fill="none" filter="url(#letter-shadow)" stroke-linecap="round" stroke-linejoin="round">
+    <use href="#letter-c" stroke="url(#c-face)" stroke-width="42" />
+    <use href="#letter-n" stroke="url(#n-face)" stroke-width="36" />
+  </g>
+</svg>
